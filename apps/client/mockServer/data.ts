@@ -1,4 +1,4 @@
-export const projects = [
+export const MOCK_PROJECT = [
   { name: "MS final project", href: "1", desc: "project description" },
   { name: "Telegram bot", href: "2", desc: "project description" },
   { name: "UI/UX", href: "3", desc: "project description" },
