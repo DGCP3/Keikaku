@@ -1,3 +1,7 @@
+![Alt text](./cover_image.png)
+
+# keikaku
+
 # Turborepo starter
 
 This is an official starter Turborepo.
