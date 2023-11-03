@@ -1,5 +1,5 @@
 import { Model, createServer } from "miragejs";
-import { projects } from "./data";
+import { MOCK_PROJECT } from "./data";
 
 export default function makeServer() {
   return createServer({
@@ -17,13 +17,13 @@ export default function makeServer() {
 
       this.get("/projects", () => {
         return {
-          movies: projects,
+          movies: MOCK_PROJECT,
         };
       });
 
       this.get("/projects/:id", (schema, request) => {
         const id = request.params.id;
-        const project = projects.find((project) => project.href === id);
+        const project = MOCK_PROJECT.find((project) => project.href === id);
         return {
           project,
         };
